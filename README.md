@@ -1,13 +1,10 @@
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
+# Random Number Oracle
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
+# run localhost network
 npx hardhat node
-npx hardhat run scripts/deploy.ts
+# deploy contracts and run provider
+npx hardhat run --network localhost scripts/provider.ts
+# request a random number
+npx hardhat run --network localhost scripts/caller.ts
 ```
